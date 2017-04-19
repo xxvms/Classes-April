@@ -34,3 +34,14 @@ std::string PersonalData::getSex()
 {
 	return sex;
 }
+PersonalData::PersonalData()
+{
+	static int i = 0; // static forces to update number each time constructor is used for an object. Static variable is created only ONCE and is shared in class
+	std::cout << "This is constractor in use: " << ++i << std::endl;  // pre incrementation
+	age = 0;
+}
+PersonalData::~PersonalData()
+{
+	static int i = 0; // static forces to update number each time constructor is used for an object. Static variable is created only ONCE and is shared in class
+	std::cout << "This is Destractor in use: " << ++i << std::endl;  // pre incrementation
+}
