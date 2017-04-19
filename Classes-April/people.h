@@ -9,9 +9,9 @@ private:
 	std::string sex;
 
 public:
-	void setAge(short value);
-	void setName(std::string name_);
-	void setSex(std::string sex_);
+	void setAge(short);
+	void setName(std::string);
+	void setSex(std::string);
 
 	short getAge();
 	std::string getName();

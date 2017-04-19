@@ -5,14 +5,14 @@
 #include <string>
 #include "people.h"
 
-void PersonalData::setAge(short value)
+void PersonalData::setAge(short age)
 {
-	if (value < 0)
+	if (age < 0)
 
-		age = 0;
+		this->age = 0; // this-> is an address to the class header
 
 	else
-		age = value;
+		this->age = age;
 }
 void PersonalData::setName(std::string name_)
 {
