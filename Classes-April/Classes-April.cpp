@@ -4,31 +4,17 @@
 #include "stdafx.h"
 #include <iostream>
 #include <string>
+#include "people.h"
 
 
-class PersonalData
-{
-private:
-	short age;
-	std::string name;
-	std::string sex;
 
-public:
-	void setAge(short value) { age = value; }
-	short getAge() { return age; }
-	void setName(std::string name_) { name = name_;  }
-	void setSex(std::string sex_) { sex = sex_; }
-	std::string getName() { return name; }
-	std::string getSex() { return sex; }
-
-};
 
 int main()
 {
 
 	PersonalData person;
 
-	person.setAge(25);
+	person.setAge(20);
 	person.setName("Ola-Fasola");
 	person.setSex("Female");
 
